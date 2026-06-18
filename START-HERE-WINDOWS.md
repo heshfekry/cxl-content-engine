@@ -77,10 +77,10 @@ The Terminal is a place where you type commands. You want the **Git Bash** one.
    cd ~
    ```
 
-2. Download the folder by pasting the command your workshop host gave you. It looks like:
+2. Download the folder by pasting this command:
 
    ```
-   git clone <THE-LINK-YOUR-HOST-GAVE-YOU>
+   git clone https://github.com/heshfekry/cxl-content-engine.git
    ```
 
    Press **Enter** and wait. A new folder appears.
