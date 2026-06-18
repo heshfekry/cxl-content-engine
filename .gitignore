@@ -1,0 +1,25 @@
+# Generated content stays local. Each user makes their own.
+# Ignore everything under content/, but keep the folder structure so it
+# survives a clone (re-include directories and the .gitkeep markers).
+content/**
+!content/**/
+!content/**/.gitkeep
+
+# The user's own brand files and examples are personal. Do not share them by default.
+your-setup/voice-examples/*
+!your-setup/voice-examples/READ-ME.md
+your-setup/source-docs/*
+!your-setup/source-docs/READ-ME.md
+
+# Voice-of-customer material is private (call transcripts, tickets, surveys). Keep it local.
+inputs/voice-of-customer/*
+!inputs/voice-of-customer/READ-ME.md
+
+# State files
+your-setup/.setup-state
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
