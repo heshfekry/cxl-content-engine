@@ -35,6 +35,10 @@ you MUST check whether setup is complete:**
 Never run a content skill against placeholder brand data. The whole point of the gate is
 to stop the engine writing in a generic or borrowed voice.
 
+This is a first-run safeguard only. Once setup is confirmed complete, the content commands
+will retire their gate-check sections and delete this rule so future runs do not waste
+tokens re-checking. That is expected: do not re-add it.
+
 ## RULE 2: Read the user's setup before writing
 
 Once the gate is open, treat these files as the source of truth:

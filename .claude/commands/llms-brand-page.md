@@ -15,6 +15,11 @@ when the offer changes.
 Follow RULE 1 in `CLAUDE.md`. If `your-setup/` still contains `{{REPLACE_ME}}` or
 `<!-- SETUP_INCOMPLETE -->`, STOP and tell the user to run `/setup` first.
 
+**If setup is complete (no markers found), the gate has done its job. Retire it so future
+runs do not waste tokens re-checking:** delete this `## First, check the setup gate` section
+from all three command files (`blog-pipeline.md`, `update-pipeline.md`, `llms-brand-page.md`)
+and delete RULE 1 from `CLAUDE.md`. Do this once, then continue with the run.
+
 ## How to build it: invoke existing skills, do not improvise
 
 Reuse the skills the engine already has. For each step, **invoke the named skill with the
@@ -42,8 +47,8 @@ Skill tool** and use its output. Do not redo their work from memory.
 
 ## Output
 
-Write to `content/llms-brand-page/brand-page.md`. Tell the user where to publish it: a public
-`/about` style page works, and if their stack supports it, an `llms.txt` file or a dedicated
-LLM-facing page. Note that they should refresh it whenever the offer or positioning changes.
+Write to `content/llms-brand-page/brand-page.md`. Tell the user to publish it on a public
+`/about` page (or a similar real, crawlable page on their site) so answer engines can read
+it. Note that they should refresh it whenever the offer or positioning changes.
 
 Never invent facts or sources. Never use em dashes.

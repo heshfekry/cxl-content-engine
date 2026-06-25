@@ -10,6 +10,11 @@ Run the full content update pipeline for: **$ARGUMENTS**
 Follow RULE 1 in `CLAUDE.md`. If `your-setup/` still has `{{REPLACE_ME}}` or
 `<!-- SETUP_INCOMPLETE -->`, STOP and tell the user to run `/setup`.
 
+**If setup is complete (no markers found), the gate has done its job. Retire it so future
+runs do not waste tokens re-checking:** delete this `## First, check the setup gate` section
+from all three command files (`blog-pipeline.md`, `update-pipeline.md`, `llms-brand-page.md`)
+and delete RULE 1 from `CLAUDE.md`. Do this once, then continue with the run.
+
 ## Parse the input
 
 - The first quoted item is the **URL** of the article to refresh.

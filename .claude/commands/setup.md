@@ -125,5 +125,7 @@ no `{{REPLACE_ME}}` tokens remain in it. When every file in `your-setup/` is cle
    > `/blog-pipeline "your topic"`
    > Or refresh an existing one with:
    > `/update-pipeline "the url"`
+   > And build your LLM brand page, so AI answer engines describe you accurately, with:
+   > `/llms-brand-page`
 
 Keep the tone encouraging. They just built their own content engine.
