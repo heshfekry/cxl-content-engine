@@ -1,5 +1,5 @@
 ---
-description: Refresh an existing published article, from extracting it to a side-by-side diff preview. Usage: /update-pipeline "url" [optional steering notes]
+description: Refresh an existing published article, from extracting it to a full preview of the new article with changes marked inline. Usage: /update-pipeline "url" [optional steering notes]
 argument-hint: "https://your-site.com/article" [notes on what to focus on]
 ---
 
@@ -34,12 +34,13 @@ skill returns, save its output file, then move to the next step. Never skip the 
 5. **update-product-mentions** (new features worth adding) -> `content/updates/3-update-product-mentions/{slug}.md`
 6. **update-topic-gaps** (gaps vs the SERP and what answer engines cite) -> `content/updates/4-update-topic-gaps/{slug}.md`
 7. **update-draft** (consolidate the audits into a revised article) -> `content/updates/7-updated-draft/{slug}.md`
-8. **update-preview** (side-by-side diff of old vs new) -> `content/updates/5-update-preview/{slug}.html`
+8. **update-preview** (full refreshed article with changes marked inline) -> `content/updates/5-update-preview/{slug}.html`
 
 ## When done
 
-Open or point the user to the diff preview so they can see exactly what changed and accept
-or reject the update. Remind them nothing is published until they say so.
+Open or point the user to the preview so they can read the full refreshed article and see
+exactly what changed inline, then accept or reject the update. Remind them nothing is
+published until they say so.
 
 Follow the data-source toggles. Do not invent replacement stats: every changed number must
 have a real, retrievable source. Never use em dashes.

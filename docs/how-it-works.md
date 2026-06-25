@@ -48,7 +48,8 @@ work, the better it gets.
   research, answer-engine-audit, your-reference, outline, product-mentions, draft,
   verify-claims, (optional visuals), and preview.
 - **Update:** `/update-pipeline "url"` runs extract, guidance, answer-engine-audit, the three
-  audits (claims, product mentions, topic gaps), update-draft, and a side-by-side diff preview.
+  audits (claims, product mentions, topic gaps), update-draft, and a full preview of the new
+  article with changes marked inline.
 - **Brand page:** `/llms-brand-page` builds an LLM-readable brand page so answer engines
   describe you accurately. Run it once, then refresh when your offer changes.
 
