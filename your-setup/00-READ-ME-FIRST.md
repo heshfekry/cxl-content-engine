@@ -50,4 +50,20 @@ articles into `voice-examples/` (as `.md`, `.txt`, or by pasting links during `/
 Claude reads them, works out what makes them good, and writes content that matches. You
 review and correct what it inferred. See [customise-your-voice.md](../docs/customise-your-voice.md).
 
-You can re-run `/setup` any time to update any of this.
+## Updating your setup later
+
+Your setup is not locked in. Change it whenever your brand, voice, offer, or audience moves
+on. There are two ways:
+
+1. **Re-run `/setup`.** It sees what is already filled in, shows it back, and lets you change
+   only what you want. This is the easy path.
+2. **Edit the files by hand.** Open any file in this `your-setup/` folder (`brand-and-voice.md`,
+   `your-offer.md`, `data-sources.md`, `cms-connection.md`) and edit the text directly. Add or
+   swap articles in `voice-examples/` and docs in `source-docs/` any time. Save, and the engine
+   uses the new version on the next run. No special steps needed.
+
+> Note on the first-run gate: the `{{REPLACE_ME}}` and `<!-- SETUP_INCOMPLETE -->` markers,
+> and the setup-gate check in the commands, are a one-time safeguard for your very first run.
+> Once setup is complete the engine retires that check so it does not waste tokens. That does
+> not lock anything: you can still re-run `/setup` or edit these files by hand at any time, as
+> above. The gate simply does not need to run again.
